@@ -18,6 +18,10 @@ public class Bag {
         return invitation!=null;
     }
 
+    public void setTicket(Ticket ticket) {
+        this.ticket = ticket;
+    }
+
     public boolean hasTicket(){
         return ticket!=null;
     }
