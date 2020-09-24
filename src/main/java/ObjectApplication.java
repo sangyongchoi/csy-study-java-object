@@ -1,6 +1,6 @@
+import chapter_02.AmountDiscountPolicy;
 import chapter_02.Money;
 import chapter_02.Movie;
-import chapter_02.NoneDiscountPolicy;
 
 import java.time.Duration;
 
@@ -9,6 +9,6 @@ public class ObjectApplication {
         Movie starWars = new Movie("스타워즈",
                 Duration.ofMinutes(210),
                 Money.wons(10000),
-                new NoneDiscountPolicy());
+                new AmountDiscountPolicy(Money.wons(1000)));
     }
 }
