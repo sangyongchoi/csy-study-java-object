@@ -9,6 +9,10 @@ import java.util.List;
 public abstract class Phone {
     private List<Call> calls = new ArrayList<>();
 
+    public List<Call> getCalls() {
+        return calls;
+    }
+
     public Money calculaateFee(){
         Money result = Money.ZERO;
 
